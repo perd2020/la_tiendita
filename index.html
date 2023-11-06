@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="eS">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>la tiendita</title>
+
+    <link  rel= "apple-touch-icon"  tamaños= "57x57"  href= "./assets/logos/favicon/apple-icon-57x57.png" > 
+    <link  rel= "apple-touch-icon"  tamaños= "60x60"  href= "./assets/logos/favicon/apple -icon-60x60.png" > 
+    <link  rel= "apple-touch-icon"  tamaños= "72x72"  href= "./assets/logos/favicon/apple-icon-72x72.png" > 
+    <link  rel= "apple-touch-icon"  tamaños= "76x76"  href= "./assets/logos/favicon/icono-de-apple-76x76.png" > 
+    <!-- <enlace  rel= "icono-táctil-de-apple"  tamaños= "114x114"  href= "./assets/logos/favicon/icono-de-apple-114x114.png">  -->
+    <link  rel= "apple-touch-icon"  tamaños= "120x120"  href= "./assets/logos/favicon/apple-icon-120x120.png" > 
+    <link  rel= "apple-touch-icon"  tamaños= "144x144"  href= "./assets/logos/favicon/ apple-icon-144x144.png" > 
+    <link  rel= "apple-touch-icon"  tamaños= "152x152"  href= "./assets/logos/favicon/apple-icon-152x152.png" > 
+    <link  rel= "apple-touch-icon"  tamaños = "180x180"  href= "./assets/logos/favicon/icono-de-manzana-180x180.png" > 
+    <!-- <enlace  rel= "icono"  tipo= "imagen/png"  tamaños= "192x192"  href= "./assets/logos/favicon/android-icon-192x192.png" > 
+    <enlace  rel= "icono"  tipo= "imagen/png"  tamaños= "32x32"  href= "./assets/logos/favicon/favicon-32x32.png" > 
+    <enlace  rel= "icono"  type= "image/png"  tamaños= "96x96"  href= "./assets/logos/favicon/favicon-96x96.png" >  -->
+    <link  rel= "icon"  type= "image/png"  tamaños= "16x16"  href= "./assets/logos/favicon/favicon-16x16.png" > 
+    <!-- <enlace  rel= "manifest"  href= "./assets/logos/favicon/manifest.json" >  -->
+    <!-- <meta  nombre="msapplication-TileColor"  contenido = "#ffffff" > 
+    <meta  nombre = "msapplication-TileImage"  contenido = "./assets/logos/favicon/ms-icon-144x144.png" > 
+    <meta  nombre = "tema-color"  contenido = "#ffffff" > -->
+
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="/estilos/carrito.css">
+    <link rel="stylesheet" href="/estilos/cabecera.css">
+    <link rel="stylesheet" href="/estilos/catalogos.css">
+</head>
+<body>
+    <!-- <img src="./assets/img-fondo/hero.jpg" class="img-fondo" alt=""> -->
+
+        <header class="header">
+            
+            <a href="#" class="logo">
+                <img  src="/assets/logos/tiendita.png" class="img-logo" alt="">
+            </a>
+            
+            <input type="checkbox" id="toggle-menu">
+                <label for="toggle-menu"><img src="/assets/iconos/menu.svg" class="menu" alt=""></label>
+            
+            
+            <nav class="navigation">
+                <ul>
+                    <li ><a  href="#"  id="inicio">Inicio</a></li>
+                    <li><a href="#">nosotros</a></li>
+                    <li><a href="#catalogos">productos </a>
+                        <ul>
+                            <li><a href="#">hombre</a>
+                                <ul>
+                                    <li><a href="#">camperas</a></li>
+                                    <li><a href="#">camisas</a></li>
+                                    <li><a href="#">pantalones</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">mujer</a>
+                                <ul>
+                                    <li><a href="#">camperas</a></li>
+                                    <li><a href="#">camisas</a></li>
+                                    <li><a href="#">pantalones</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">niños</a>
+                                <ul>
+                                    <li><a href="#">camperas</a></li>
+                                    <li><a href="#">camisas</a></li>
+                                    <li><a href="#">pantalones</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">bebes</a>
+                                <ul>
+                                    <li><a href="#">camperas</a></li>
+                                    <li><a href="#">camisas</a></li>
+                                    <li><a href="#">pantalones</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">blog</a>
+                        <ul>
+                            <li><a href="#">novedades</a></li>
+                            <li><a href="#">moda</a></li>
+                            <li><a href="#">blog Mi Tiendita</a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                        <li><a href="#contacto">contacto</a></li>
+                        <li>
+                            <a href="#contacto" class="carrito">
+                                <img src="/assets/iconos/carrito.png" alt="carrito">
+                            </a>
+                            <span class="carrito__contador">10</span>
+                        </li>
+                    </ul>
+            </nav>
+        </header>
+        
+        <div class="contenedor">
+            <section class="banner">
+                <img src="/assets/img-fondo/banner1.png" alt="">
+            </section>
+
+            <main class="catalogos" id="catalogos">
+                <!--hombre-->
+                <section class="catalogo">
+                    <!--hombre camperas-->
+                    <article class="productos">
+                        <div class="producto">
+                            <img src="/assets/img-prod/hombre/hombre-campera-1.png"  class="img_prod" alt="#">
+                            <h2>ECO CUERO</h2>
+                            <p class="descripcionProducto">
+                                Producto de eco cuero calidad 100% .
+                                <br>
+                                Origen Argentina
+                            </p>
+                            <p class="precio">$ 300000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/hombre/hombre-campera-2.png"  class="img_prod" alt="#">
+                            <h2>Camperas </h2>
+                            <p class="descripcionProducto">
+                                Camperas de abrigo importadas.
+                                
+                            </p>
+                            <p class="precio">$ 252000</p>
+                            <button class="btn-agregar">agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/hombre/hombre-campera-3.jpg"  class="img_prod" alt="#">
+                            <h2>Chaleco de hombre</h2>
+                            <p class="descripcionProducto">
+                                Chalecos de abrigo, diferentes modelos.
+                                <!-- <br>
+                                Producto importado. -->
+                            </p>
+                            <p class="precio">$252000</p>
+                            <button class="btn-agregar">agregar al carrito</button>
+                        </div>
+                    </article>
+
+                    <article class="productos">
+                        <!--hombre camisas-->
+                        <div class="producto">
+                            <img src="/assets/img-prod/hombre/hombre-camisa-1.png"  class="img_prod" alt="#">
+                            <h2>Camisas "NAUTICA"</h2>
+                            <p class="descripcionProducto">
+                                Camisas de algodon, varios colores.Todos los talles. 
+                                <!-- <br>
+                                Indiustria argentina -->
+                            </p>
+                            <p class="precio">$ 50000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/hombre/hombre-camisa-2.png"  class="img_prod " alt="#">
+                            <h2>Camisas "ZEROYAA"</h2>
+                            <p class="descripcionProducto">
+                                Camisas estilo urbano, entalladas confeccionadas en nylon y algodon.
+                                <!-- <br>
+                                Varios colores.Todos los talles.
+                                este producto es de calidad internacional. -->
+                            </p>
+                            <p class="precio">$ 85500</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/hombre/hombre-camisa-3.png"  class="img_prod" alt="#">
+                            <h2>Camisas </h2><!--"ALMENDS & GENTLE"-->
+                            <p class="descripcionProducto">
+                                Camisas importadas.Varios colores.Todos los talles.
+                                <!-- <br>
+                                Este producto es de calidad. -->
+                            </p>
+                            <p class="precio">$ 95000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        
+                    </article>
+                    <article class="productos">
+                        <!--hombre pantalones-->
+                        <div class="producto">
+                            <img src="/assets/img-prod/hombre/hombre-pantalon-1.jpg"  class="img_prod" alt="#">
+                            <h2>Pantalones de gabardina</h2>
+                            <p class="descripcionProducto">
+                                Varios colores.Todos los talles.Industria Argentina.
+                                <!-- <br>
+                                este producto es de calidad -->
+                            </p>
+                            <p class="precio">$ 85000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/hombre/hombre-pantalon-2.jfif"  class="img_prod" alt="#">
+                            <h2>Jaens</h2>
+                            <p class="descripcionProducto">
+                                Varios colores.Todos los talles.Industria Argentina.
+                                <!-- <br>
+                                este producto es de calidad. -->
+                            </p>
+                            <p class="precio">$ 60000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/hombre/hombre-pantalon-3.png"  class="img_prod" alt="#">
+                            <h2>Pantalones Cargo</h2>
+                            <p class="descripcionProducto">
+                                Varios colores.Todos los talles.Industria Argentina.
+                                <!-- <br>
+                                este producto es de calidad. -->
+                            </p>
+                            <p class="precio">$ 80500</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </article>
+                </section>
+
+                <!--MUJER-->
+                <section class="catalogo">
+                    <!--mujer camperas-->
+                    <article class="productos">
+                        <div class="producto">
+                            <img src="/assets/img-prod/mujer/mujer-campera-1.jfif"  class="img_prod" alt="#">
+                            <h2>Puff</h2>
+                            <p class="descripcionProducto">
+                                Camperas cortas, tipo "puff", importadaas . Varios colores. Todos los talles.
+                                <br>
+                                Excelente calidad. Con  el interior en micropolar. 
+                            </p>
+                            <p class="precio">$ 300000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/mujer/mujer-campera-2.png"  class="img_prod" alt="#">
+                            <h2>Parkas</h2>
+                            <p class="descripcionProducto">
+                                Este producto es de calidad
+                            </p>
+                            <p class="precio">$ 350000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/mujer/mujer-campera-3.jfif"  class="img_prod" alt="#">
+                            <h2>Inflables</h2>
+                            <p class="descripcionProducto">
+                                Camperas inflables importadaas . Varios colores. Todos los talles.
+                                <br>
+                            Excelente calidad. Con  el interior en micropolar. 
+                            </p>
+                            <p class="precio">$ 350000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </article>
+                    <!--mujer camisas-->
+                    <article class="productos">
+                        <div class="producto">
+                            <img src="/assets/img-prod/mujer/mujer-camisa-1.jfif"  class="img_prod" alt="#">
+                            <h2>Camisas</h2>
+                            <p class="descripcionProducto">
+                                Camisas manga larga o 3/4 . Varios colores. Todos los talles.
+                                <br>
+                                Excelente calidad. 
+                            </p>
+                            <p class="precio">$ 3000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/mujer/mujer-camiseta-5.jfif"  class="img_prod" alt="#">
+                            <h2>Puperas </h2>
+                            <p class="descripcionProducto">
+                                Talle unico.Varios colores.
+                            </p>
+                            <p class="precio">$ 20000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/mujer/mujer-camiseta-3.jfif"  class="img_prod" alt="#">
+                            <h2>Remeras con transparencias</h2>
+                            <p class="descripcionProducto">
+                                Tallle unico
+                            </p>
+                            <p class="precio">$20000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </article>
+                    <!--mujer pantalones--> 
+                    <article class="productos">
+                        <div class="producto">
+                            <img src="/assets/img-prod/mujer/mujer-pantalon-1.jfif"  class="img_prod" alt="#">
+                            <h2>jean rotura "DENIM" </h2>
+                            <p class="descripcionProducto">
+                                Calce perfecto.todos los talles
+                            </p>
+                            <p class="precio">$ 20000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/mujer/mujer-pantalon-2.jfif"  class="img_prod" alt="#">
+                            <h2>Jaen elastizado "DENIM"</h2>
+                            <p class="descripcionProducto">
+                                Todos los talles, variedad en estilos y colores.
+                            </p>
+                            <p class="precio">$ 50000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/mujer/mujer-pantalon-3.jfif"  class="img_prod" alt="#">
+                            <h2>"DENIM"</h2>
+                            <p class="descripcionProducto">
+                                Jaen rigido acampanado con rotura <br> todos los , variedad en estilos y colores
+                            </p>
+                            <p class="precio">$ 50000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </article>           
+                </section>
+
+
+                <!--NIÑOS-->
+                <section class="catalogo">
+                    <article class="productos">
+                        <!--niños camperas-->
+                        <div class="producto">
+                            <img src="/assets/img-prod/ninhos/ninhos-campera-14.jfif"  class="img_prod " alt="#">
+                            <h2>Campera NENA</h2>
+                            <p class="descripcionProducto">
+                                este producto es de calidad
+                            </p>
+                            <p class="precio">$ 20000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/ninhos/ninhos-campera-11.jfif"  class="img_prod " alt="#">
+                            <h2>Parkas</h2>
+                            <p class="descripcionProducto">
+                                este producto es de calidad
+                            </p>
+                            <p class="precio">$200000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/ninhos/ninhos-campera-5.jfif"  class="img_prod " alt="#">
+                            <h2>Campera NENE</h2>
+                            <p class="descripcionProducto">
+                                este producto es de calidad
+                            </p>
+                            <p class="precio">$ 20000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </article>
+                    <!--niños REMERAS Y PULOVER-->
+                    <article class="productos">
+                        <div class="producto">
+                            <img src="/assets/img-prod/ninhos/ninhos-remera-11.jfif"  class="img_prod" alt="#">
+                            <h2>Remera NENA</h2>
+                            <p class="descripcionProducto">
+                                Remera de algodon <br> Variedad en colores y modelos <br>Talles del 1 al 14.
+                            </p>
+                            <p class="precio">$ 20000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/ninhos/ninhos-remera-6.jfif"  class="img_prod hombre__campera" alt="#">
+                            <h2>Remera NENE</h2>
+                            <p class="descripcionProducto">
+                                Remera de algodon <br> Variedad en colores y modelos <br>Talles del 1 al 14.
+                            </p>
+                            <p class="precio">$ 20000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/ninhos/ninhos-pulover-4.jfif"  class="img_prod hombre__campera" alt="#">
+                            <h2>Pulover niño</h2>
+                            <p class="descripcionProducto">
+                                Pulovers infantiles <br> Variedad en colores y modelos <br>Talles del 1 al 14.
+                            </p>
+                            <p class="precio">$ 50000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </article>
+                    <!--niños pantalones-->
+                    <article class="productos">
+                        <div class="producto">
+                            <img src="/assets/img-prod/ninhos/ninhos-pantalon-4.jfif"  class="img_prod hombre__campera" alt="#">
+                            <h2>Pantalon deportivo NENE</h2>
+                            <p class="descripcionProducto">
+                                Pantalon de algodon <br> Variedad en colores y modelos <br>Talles del 1 al 14.
+                            </p>
+                            <p class="precio">$ 5000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/ninhos/ninhos-pantalon-5.jfif"  class="img_prod hombre__campera" alt="#">
+                            <h2>Jaens para NIÑOS</h2>
+                            <p class="descripcionProducto">
+                                Jaens nena o varon<br> Variedad en colores y modelos <br>Talles del 1 al 14.
+                            </p>
+                            <p class="precio">$ 9000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/ninhos/ninhos-pantalon-9.png"  class="img_prod hombre__campera" alt="#">
+                            <h2>Pantalon babucha-PRODUCTO AGOTADO</h2>
+                            <p class="descripcionProducto">
+                                Pantalon de algodon puño con  elastico<br> Variedad en colores y modelos <br>Talles del 1 al 14.
+                            </p>
+                            <p class="precio">$ 3000</p>
+                            <button class="btn-agregar">Agregar al carrito</button>
+                        </div>
+                    </article>
+                </section>
+
+                <!--BEBE-->
+                <section class="catalogo">
+                    <!--CAMPERAS-->
+                    <article class="productos">                        
+                        <div class="producto">
+                            <img src="/assets/img-prod/bebe/bb-campera-1.jfif"  class="img_prod " alt="#">
+                            <h2>chalecos NENE NENA</h2>
+                            <p class="descripcionProducto">
+                                chalecos super abrigados y cancheros .
+                                <br>
+                                desde el talle 0m al talle 12m
+                            </p>
+                            <p class="precio">$ 80000</p>
+                            <button class="btn-agregar">agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/bebe/bb-campera-2.jpg"  class="img_prod hombre__campera" alt="#">
+                            <h2>camperitas bebe NENE </h2>
+                            <p class="descripcionProducto">
+                                camperita de abrigo para bebes super canchera
+                                <br>
+                                desde el talle 0m al talle 12m
+                            </p>
+                            <p class="precio">$ 100000</p>
+                            <button class="btn-agregar">agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/bebe/bb-campera-3.jfif"  class="img_prod " alt="#">
+                            <h2>camperas  para bebas NENA</h2>
+                            <p class="descripcionProducto">
+                                camperita de abrigo para bebes super canchera
+                                <br>
+                                desde el talle 0m al talle 12m
+                            </p>
+                            <p class="precio">$ 100000</p>
+                            <button class="btn-agregar">agregar al carrito</button>
+                        </div>
+                    </article>
+                    <!--bebe camisas---ABRIGOS-->
+                    <article class="productos">
+                        
+                        <div class="producto">
+                            <img src="assets/img-prod/bebe/bb-buzo-1.jfif"  class="img_prod hombre__campera" alt="#">
+                            <h2>ajuar para bebe</h2>
+                            <p class="descripcionProducto">
+                                este producto es de calidad
+                            </p>
+                            <p class="precio">$200000</p>
+                            <button class="btn-agregar">agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="assets/img-prod/bebe/bb-buzo-2.jfif"  class="img_prod hombre__campera" alt="#">
+                            <h2>vestidos para niñas del 1 al 12</h2>
+                            <p class="descripcionProducto">
+                                este producto es de calidad
+                            </p>
+                            <p class="precio">$200000</p>
+                            <button class="btn-agregar">agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/bebe/bb-buzo-3.jfif"  class="img_prod hombre__campera" alt="#">
+                            <h2>cunjunto 3 piezas para varon</h2>
+                            <p class="descripcionProducto">
+                                este producto es de calidad
+                            </p>
+                            <p class="precio">$200000</p>
+                            <button class="btn-agregar">agregar al carrito</button>
+                        </div>
+                    </article>
+                    <!--bebe pantalones--CONJUNTOS-->
+                    <article class="productos">
+                        <div class="producto">
+                            <img src="/assets/img-prod/bebe/bb-conjunto-1.jfif"  class="img_prod hombre__campera" alt="#">
+                            <h2>conjunto de algodon</h2>
+                            <p class="descripcionProducto">
+                                este producto es de calidad
+                            </p>
+                            <p class="precio">$200000</p>
+                            <button class="btn-agregar">agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/bebe/bb-conjunto-2.jpg"  class="img_prod hombre__campera" alt="#">
+                            <h2>conjunto de algodon<</h2>
+                            <p class="descripcionProducto">
+                                este producto es de calidad
+                            </p>
+                            <p class="precio">$200000</p>
+                            <button class="btn-agregar">agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/bebe/bb-conjunto-3.jfif"  class="img_prod hombre__campera" alt="#">
+                            <h2>conjunto de algodon<</h2>
+                            <p class="descripcionProducto">
+                                este producto es de calidad
+                            </p>
+                            <p class="precio">$200000</p>
+                            <button class="btn-agregar">agregar al carrito</button>
+                        </div>
+                    </article>
+                    <!--OSITOS-->
+                    <article class="productos">
+                        <div class="producto">
+                            <img src="/assets/img-prod/bebe/bb-osito-1.jfif"  class="img_prod hombre__campera" alt="#">
+                            <h2>conjunto de algodon</h2>
+                            <p class="descripcionProducto">
+                                este producto es de calidad
+                            </p>
+                            <p class="precio">$200000</p>
+                            <button class="btn-agregar">agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/bebe/bb-osito-2.jpg"  class="img_prod hombre__campera" alt="#">
+                            <h2>conjunto de algodon<</h2>
+                            <p class="descripcionProducto">
+                                este producto es de calidad
+                            </p>
+                            <p class="precio">$200000</p>
+                            <button class="btn-agregar">agregar al carrito</button>
+                        </div>
+                        <div class="producto">
+                            <img src="/assets/img-prod/bebe/bb-osito-3.jfif"  class="img_prod hombre__campera" alt="#">
+                            <h2>conjunto de algodon<</h2>
+                            <p class="descripcionProducto">
+                                este producto es de calidad
+                            </p>
+                            <p class="precio">$200000</p>
+                            <button class="btn-agregar">agregar al carrito</button>
+                        </div>
+                    </article>
+                </section>
+
+            
+
+                
+            <div class="contenedor__btn">
+                <a href="#catalogos" class="catalogos__btn--inicioCatalogo"><img  id="catalogos__btn-flecha"   src="./assets/iconos/flecha.svg" ></a>
+            </div>
+            </main>
+
+            <footer class="footer">
+                <h2 class="footer__title">contactate con nosotros</h2>
+                    <div class="footer__info">
+                        <a href="./informacionExtra.html/.mapa">donde estamos</a>
+                        <a href="#">sugerencias </a>
+                        <a href="#">medios de pago</a>
+                    </div>
+
+                    <div class="footer__logos" id="contacto">
+                        <div  class="logos">
+                            <img class="foolog" src="./assets/logos/face.png" alt="">
+                        </div>
+                        <div  class="logos">
+                            <img  class="foolog" src="./assets/logos/insta.png" alt="">
+                        </div>
+                        <div class="logos">
+                            <a href="#"><img class="foolog" src="/assets/logos/whatsapp.png"  alt=""></a>
+                        </div>
+                    </div>
+                    <div class="firma-pag">
+                        <p>  ARIEL FERNANDO RUIZ DIAZ by <b>WEBNOVA</b> &copy 2023</p>
+                    </div>
+            </footer>
+        </div>
+</body>
+</html>
