@@ -5,6 +5,8 @@
 https://github.com/perd2020/la_tiendita/assets/91780371/2576f4a1-b95e-496d-8063-75ea8939d6b5
 
 🛒 IMAGEN DEL MENU LATERAL
+
+
 ![1701531597348](https://github.com/perd2020/la_tiendita/assets/91780371/db2181cb-295f-4736-988d-c76340fa00b2)
 
 
