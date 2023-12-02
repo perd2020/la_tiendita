@@ -1,5 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
-@import url('https://fonts.googleapis.com/css2? family= Roboto+Condensed:ital,wght@0,400;0,700;1,300 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --clr-main: #4b33a8;
+    --clr-main-light: #785ce9;
+    --clr-white: #ececec;
+    --clr-gray: #e2e2e2;
+    --clr-red: #961818;
+    --clr-black-trns:rgba(1, 1, 1, 0.7);
+    --clr-black: rgba(0,0,0);
+    --clr-blue: rgb(74, 51, 168);
+    --clr-blue-light: rgb(120, 92, 232);
+    --clr-white: rgb(255, 255, 255);
+    --clr-gray: rgb(245, 245, 245);
+    --clr-red: rgb(150, 23, 23);
+    --clr-logo:rgb(167, 37, 89);
+    --clr-img-fondo:rgb(242, 239, 235) ;
+    --clr--fnd-header:rgba(121, 93, 233, 0.5)
+}
+
+
 *,
 *::after,
 *::before{
@@ -10,14 +29,10 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    /* min-height: 100vh; */
     box-sizing: border-box;
-
+    background-color: var(--clr-img-fondo);
     }
-
-/* Elemento | http://127.0.0.1:5501/ */
-
-a{
+a {
     text-decoration: none;
 }
 
@@ -25,174 +40,155 @@ ul li{
     list-style: none;
 }
 
-img{
-    width: 100%;
-    height: 100%;
-}
+
 
 .contenedor{
-    max-width: 1100px;
-    margin: 120px 0 100px 100px ;
+    width: 1300px;
+    position: relative; 
+    left: 0;
+    right: 0;
+
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    
     grid-template-areas:
                         "banner     banner    banner"
-                        "catalogos  catalogos catalogos"
-                        "catalogos  catalogos catalogos"
-                        "catalogos  catalogos catalogos"
-                        "catalogos  catalogos catalogos"
-                        "catalogos  catalogos catalogos"
-                        "catalogos  catalogos catalogos"
-                        "catalogos  catalogos catalogos"
-                        "catalogos  catalogos catalogos"
-                        "catalogos  catalogos catalogos"
-                        "catalogos  catalogos catalogos"
-                        "catalogos  catalogos catalogos"
-                        "catalogos  catalogos catalogos"
-                        "footer     footer    footer"
-                        "footer     footer    footer"
+                        "productos  productos productos"
                         "footer     footer    footer";
 
-    justify-content: center;
-    align-content: space-around;                    
+    justify-content: space-between;
+    align-content: space-between;                    
 }
 
 
-.contenedor .banner{
+.banner{
     grid-area: banner;
-    position: relative;
-    top: 10px;
+    width: 100%;
 }
 
-.contenedor .banner img{
-    max-width: 100%;
-    min-width: 500px;
-    max-height: 75vh;
-    /* margin: 10px; */
+.contenedor__img-banner{
+    padding: 20px ;
 }
+.banner__img{
+    width: 80%;
+}
+
+
+/*BOTONES  EN EL CATALOGO para subir al comienzo del catalogo*/
+.boton-flecha{
+    background-color: var(--clr-blue-light);
+    border: 2px solid var(--clr-blue);
+    border-radius: 25px;
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    z-index: 1000;
+    width: 80px;
+    height: 40px;
+    font-size: 0.5em;
+    text-align: center;
+    font-weight: 400;
+}
+
+.boton-flecha>a{
+    color: #000;
+
+}
+.boton-flecha:hover{
+    background-color: rgb(17, 151, 168);
+    border: 5px solid #000;
+    font-weight: 600;
+}
+
+
+
+
 
 /*footer*/
-.contenedor .footer{
+.footer{
     grid-area: footer;
-    background-color: rgba(75, 195, 211, 0.24);
-    color: #a22020; 
+    display: grid;
+
+    background-color: var(--clr-gray);
+    color: #081a39; 
+}
+.contenedorFooter{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-}
+    justify-content: center;
 
-.footer .footer__info{
+}
+.footer__title{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1em;
+}
+.footer__title:hover{
+    translate: 25px;
+}
+.footer__info{
     border-radius: 5px;
-    /* padding: 10px; */
-    /* width: 100%; */
-
-
+    text-transform: capitalize;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-.footer .footer__info a{
+.footer__info a{
     padding: 5px;
+    margin: auto;
     color: #000;
-    
-    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 0.8em;
+    font-weight: 400;
     transition: .3s;
 }
 
-.footer .footer__info a:hover{
+.footer__info a:hover{
     transform: scale(1.2);
+    border-bottom: 2px solid #000;
 }
 
-.footer .footer__logos{
+.footer__logos{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border-top: 2px solid #000;
 }
 
-.footer .footer__logos  .logos {
-    /* border: 5px solid #000; */
+.logos_title{
+    margin: auto;
+    font-size: 0.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-top: 0.5em;
+}
+
+.logos {
     padding: 10px ;
 } 
 
 
-.footer .footer__logos .logos .foolog{
+.foolog{
     width: 40px;
     height: 40px;
     transition: .3s;
 }
 
 
-.footer .footer__logos .logos .foolog:hover{
+.foolog:hover{
     transform: scale(1.2);
 }
 
 
 .firma-pag{
+    background-color: var(--clr-black-trns);
     color: #fff;
     text-align: center;
 }
 
 .footer .firma-pag >p {
-    padding: 20PX;
+    padding: 5px;
+    font-size: 8px;
 }
 
-@media screen and (max-width:950px) {
-    .contenedor{
-        /* max-width: 1100px; */
-        /* margin: 150px 0 100px 100px ; */
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-                            "banner     banner    "
-                            "catalogos  catalogos "
-                            "catalogos  catalogos "
-                            "catalogos  catalogos "
-                            "catalogos  catalogos "
-                            "catalogos  catalogos "
-                            "catalogos  catalogos "
-                            "catalogos  catalogos "
-                            "catalogos  catalogos "
-                            "catalogos  catalogos "
-                            "catalogos  catalogos "
-                            "catalogos  catalogos "
-                            "catalogos  catalogos "
-                            "footer     footer    "
-                            "footer     footer    "
-                            "footer     footer    ";
-    
-        justify-content: center;
-        align-content: space-around;                    
-    }
-
-    .contenedor .banner{
-        position: relative;
-        top: -90px;
-        /* bottom: 10px; */
-        left: -50px;
-        right: 50px;
-    }
-
-    .contenedor .banner img{
-        width: 950px;
-        height: 100vh;
-    }
-    
-    /*footer*/
-    .contenedor .footer{
-        grid-area: footer;
-        background-color: rgba(0, 0, 0, 0.24);
-        color: #fff; 
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    
-}
-@media screen(max-width:724px) {
-    
-}
-@media screen(max-width:460px) {
-    
-}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>la tiendita</title>
+
+    <link  rel= "apple-touch-icon"  size= "57x57"  href= "./assets/logos/favicon/apple-icon-57x57.png" > 
+    <link  rel= "apple-touch-icon"  size= "60x60"  href= "./assets/logos/favicon/apple -icon-60x60.png" > 
+    <link  rel= "apple-touch-icon"  size= "72x72"  href= "./assets/logos/favicon/apple-icon-72x72.png" > 
+    <link  rel= "apple-touch-icon"  size= "76x76"  href= "./assets/logos/favicon/icono-de-apple-76x76.png" > 
+    <link  rel= "icono-táctil-de-apple"  size= "114x114"  href= "./assets/logos/favicon/icono-de-apple-114x114.png"> 
+    <link  rel= "apple-touch-icon"  size= "120x120"  href= "./assets/logos/favicon/apple-icon-120x120.png" > 
+    <link  rel= "apple-touch-icon"  size= "144x144"  href= "./assets/logos/favicon/ apple-icon-144x144.png" > 
+    <link  rel= "apple-touch-icon"  size= "152x152"  href= "./assets/logos/favicon/apple-icon-152x152.png" > 
+    <link  rel= "apple-touch-icon"  size = "180x180"  href= "./assets/logos/favicon/icono-de-manzana-180x180.png" > 
+    <link  rel= "icono"  tipo= "imagen/png"  size= "192x192"  href= "./assets/logos/favicon/android-icon-192x192.png" > 
+    <link  rel= "icono"  tipo= "imagen/png"  size= "32x32"  href= "./assets/logos/favicon/favicon-32x32.png" > 
+    <link  rel= "icono"  type= "image/png"  size= "96x96"  href= "./assets/logos/favicon/favicon-96x96.png" > 
+    <link  rel= "icon"  type= "image/png"  size= "16x16"  href= "./assets/logos/favicon/favicon-16x16.png" > 
+    <link  rel= "manifest"  href= "./assets/logos/favicon/manifest.json" > 
+    <meta  name="msapplication-TileColor"  content = "#ffffff" > 
+    <meta  name = "msapplication-TileImage"  content = "./assets/logos/favicon/ms-icon-144x144.png" > 
+    <meta  name = "tema-color"  content = "#ffffff" > 
+
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="/estilos/carrito.css">
+    <link rel="stylesheet" href="/estilos/cabecera.css">
+    <link rel="stylesheet" href="/estilos/catalogo.css">
+
+
+</head>
+<body>
+    <div class="wraper-carrito">
+        <header class="header-mobile">
+            <h1 class="logo"id="logo_carrito"</h1>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside class="menu-lateral-carrito">
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <a  class="logo_ppal-carrito" href="/index.html#inicio"><img  src="/assets/logos/tiendita.png" class="img-logo" alt="logo y enlace para volver a la pagina principal"></a>
+
+                <ul>
+                    <li>
+                        <a class="boton-menu boton-volver" href="./index.html">◀ Seguir comprando</a>
+                    </li>
+                </ul>
+            </header>
+            <nav>
+                <ul class="menu-lateral">
+                    <li>
+                        <button  class="boton-menu-carrito ">🛒 Productos en el carrito</button>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="catalogo">
+            <h2 class="titulo-principal" id="titulo_principal-carrito">Carrito</h2>
+            <div class="contenedor-carrito">
+                <p id="carrito-vacio" class="carrito-vacio">CARRITO VACIO</p>
+                <div id="carrito-productos" class="carrito-productos disabled">  <!--disabled deshabilitado-->
+                    <!-- Esto se va a completar con el JS -->vghjkfgpojku
+                </div>
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izquierda">
+                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+                    </div>
+                    <div class="carrito-acciones-derecha">
+                        <div class="carrito-acciones-total">
+                            <p>Total:</p>
+                            <p id="total">$3000</p>
+                        </div>
+                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+                    </div>
+                </div>
+                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
+            </div>
+        </main>
+    <!--boton para volver al inicio de la pagina-->
+        <!-- <button class="boton-flecha"> <a href="#titulo_principal-carrito">🔼 ir arriba</a> </button> -->
+    <footer class="footer-carrito"> 
+        <div class="contenedorFooter"><p> <b>WEBNOVA</b> &copy 2023</p></div>
+        
+    </footer>
+    
+    </div>
+
+<script src="js/main.js"></script>
+<script src="js/carrito.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
