@@ -1,4 +1,5 @@
 #  *la tiendita 🛒* 
+enlace: https://la-tiendita-perd2020.netlify.app/
 ## 🛒 es un proyecto realizado por mi para practicar mis conocimientos iniciales en JS.
 🛒 VIDEO DEL PROYECTO
 
