@@ -5,27 +5,26 @@
     flex-direction: column;
     align-items: center;
     width: 20em;
-    height: 40em;
     font-size: 10px;
-    cursor: pointer;
+    /* cursor: pointer; */
     text-align: center;
     position: relative;
-    top: 0em;
-    right: 50px;
+    top: 10em;
     opacity: 90%;
+
+    font-size: 0.8em;
+    font-weight: 800;
+    border-bottom: 2px solid var(--clr-blue);
 }
 
 
 
 /** CARRITO **/
 .wraper-carrito{
-    
     display: grid;
     grid-template-columns: 1fr 4fr;
-    /* grid-template-rows: 80% 1fr; */
     background-color: var(--clr-blue-light);
     width: 100%;
-    height: 100vh;
 }
 /*menu carrito*/
 
@@ -35,7 +34,7 @@
     gap: .5rem;
 }
 .boton-menu-carrito {
-    background-color: var(--clr-white);
+    background-color: var(--clr-blue);
     color: var(--clr-main);
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -70,10 +69,11 @@
     box-shadow: 0 -1rem 0 var(--clr-white);
 }
 
-
+/*seguir comprando*/
 .boton-volver{
     position: absolute;
     bottom: 11em;
+    color: var(--clr-blue);
 }
 
 /*contenedor carrito*/
@@ -176,21 +176,12 @@
     visibility: none;
 }
 .footer-carrito{
-    grid-area: footer;
-    display: grid;
-    justify-content: center;
-
-    background-color: var(--clr-gray);
-    color: #081a39; 
+    position: fixed;
+    right: 0.1em;
+    left: 0.1em;
+    bottom: 0;
 }
 
-.footer-carrito .contenedor-carrito{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
 
 @media screen and (max-width:960px){
     .header .carrito{

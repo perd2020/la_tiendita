@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>la tiendita</title>
-<!-- 
+
+    <link rel="preconexión" href="https://fonts.googleapis.com">
+    <link rel="preconexión" href="https://fonts.gstatic.com" origen cruzado>
+
     <link  rel= "apple-touch-icon"  size= "57x57"  href= "./assets/logos/favicon/apple-icon-57x57.png" > 
     <link  rel= "apple-touch-icon"  size= "60x60"  href= "./assets/logos/favicon/apple -icon-60x60.png" > 
     <link  rel= "apple-touch-icon"  size= "72x72"  href= "./assets/logos/favicon/apple-icon-72x72.png" > 
@@ -21,7 +24,7 @@
     <link  rel= "manifest"  href= "./assets/logos/favicon/manifest.json" > 
     <meta  name="msapplication-TileColor"  content = "#ffffff" > 
     <meta  name = "msapplication-TileImage"  content = "./assets/logos/favicon/ms-icon-144x144.png" > 
-    <meta  name = "tema-color"  content = "#ffffff" >  -->
+    <meta  name = "tema-color"  content = "#ffffff" > 
 
     <link rel="stylesheet" href="/estilos/style.css">
     <link rel="stylesheet" href="/estilos/carrito.css">
@@ -31,7 +34,7 @@
     
 </head>
 <body >
-    <header class="header">
+    <header class="header" id="header">
         
         <a href="#" class="logo_ppal">
             <img  src="/assets/logos/tiendita.png" class="img-logo" alt="">
@@ -43,20 +46,14 @@
         
         <nav class="navigation">
             <ul>
-                <li ><a class="enlace-header" href="/"  id="inicio">Inicio</a></li>
+                <li ><a class="enlace-header" href="#header"  id="inicio">Inicio</a></li>
                 <!--nosotros-->
-                <li><a class="enlace-header" href="#">nosotros</a></li>
+                <li><a class="enlace-header" href="#footer">nosotros</a></li>
                 <!--productos-->
                 <li><a  class="enlace-header" href="#contenedor-productos">productos </a> </li>
                     
                 <!--blog-->
-                <li><a class="enlace-header" href="#">blog</a>
-                    <ul class="enlace-header submenu">
-                        <li><a  href="#">novedades</a></li>
-                        <li><a  href="#">moda</a></li>
-                        <li><a  href="#">blog Mi Tiendita</a></li>
-                        <li><a  href="#"></a></li>
-                    </ul>
+                <li><a class="enlace-header" href="#footer">blog</a>
                 </li>
                 <!--contatcto-->
                 <li><a class="enlace-header" href="#contacto">contacto</a></li>
@@ -68,15 +65,20 @@
     <div class="contenedor">
         <section class="banner">
             <div class="contenedor__img-banner">
-                <img class="banner__img" src="/assets/img-fondo/banner1.png" alt="imagen_banner">
+
+                    <img class="banner__img" src="/assets/img-banner/banner1.webp" alt="imagen_banner">
             </div>
             
         </section>
 
 
         <div class="wrapper">
+            
             <header class="header-mobile">
-                <h1 class="logo_wrapper"></h1>
+                
+                <div class="logo_wrapper">
+                    <img  src="/assets/logos/tiendita.png" class="img-logo-menu-lateral" alt="img-logo">
+                </div>
                 <button class="open-menu" id="open-menu">
                     <i class="bi bi-list"></i>
                 </button>
@@ -85,13 +87,15 @@
                 <button class="close-menu" id="close-menu">
                     <i class="bi bi-x"></i>
                 </button>
-                <header>
-                    <img  src="/assets/logos/tiendita.png" class="img-logo" alt="img-logo">
-                </header>
+                
+                <p>La Tiendita Shopp</p>
+                <img  src="/assets/logos/tiendita.png" class="img-logo-menu-lateral" alt="img-logo">
+                
                 <nav>
                     <ul class="menu-lateral">
                         <li>
-                            <button id="todos" class="boton-menu boton-categoria active"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-index-fill" viewBox="0 0 16 16">
+                            <button id="todos" class="boton-menu boton-categoria active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-index-fill" viewBox="0 0 16 16">
                                 <path d="M8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v5.34l-1.2.24a1.5 1.5 0 0 0-1.196 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002z"/>
                             </svg> Todos los productos</button>
                         </li>
@@ -125,9 +129,9 @@
 
         <!--boton para volver al inicio de la pagina-->
         <button class="boton-flecha"> <a href="#inicio">🔼 ir arriba</a> </button>
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="contenedorFooter">
-                <h2 class="footer__title"></h2>
+                <h2 class="footer__title">Queres saber sobre nosotros?</h2>
                     <div class="footer__info">
                         <a href="./informacionExtra.html/.mapa">🏦donde estamos</a>
                         <a href="#">😎sugerencias </a>
@@ -153,7 +157,7 @@
         
         </div>
 <script src="js/menu.js"></script>
-        <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 <script src="js/carrito.js"></script>
 </body>
 </html>

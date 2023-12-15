@@ -1,21 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,600;0,800;1,400;1,800&display=swap');
 
 :root {
+    /*blancos*/
+    --clr-white: rgb(255, 255, 255);
+    --clr-img-fondo:rgb(242, 239, 235) ;
+    --clr-gray: rgb(226, 226, 226);
+    --clr-grayDark: rgb(97, 92, 92);
+
+    /*azules*/
     --clr-main: #4b33a8;
     --clr-main-light: #785ce9;
-    --clr-white: #ececec;
-    --clr-gray: #e2e2e2;
-    --clr-red: #961818;
-    --clr-black-trns:rgba(1, 1, 1, 0.7);
-    --clr-black: rgba(0,0,0);
     --clr-blue: rgb(74, 51, 168);
-    --clr-blue-light: rgb(120, 92, 232);
-    --clr-white: rgb(255, 255, 255);
-    --clr-gray: rgb(245, 245, 245);
+    --clr-blue-light: rgb(120, 92, 232);/*fondo body*/
+    --clr-blueDark: rgb(34, 15, 109);
+
+    --clr--fnd-header:rgba(121, 93, 233, 0.5);
+
+    /*negros*/
+    --clr-black: rgba(0,0,0);
+
+    --clr-black-trns:rgba(1, 1, 1, 0.7);
+    --clr--bx-shadow:2px 5px 20px rgba(0,0,0, 1.27);
+
+    /*colores */
     --clr-red: rgb(150, 23, 23);
     --clr-logo:rgb(167, 37, 89);
-    --clr-img-fondo:rgb(242, 239, 235) ;
-    --clr--fnd-header:rgba(121, 93, 233, 0.5)
 }
 
 
@@ -28,9 +38,9 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     box-sizing: border-box;
-    background-color: var(--clr-img-fondo);
+    background-color: var(--clr-blue-light);
     }
 a {
     text-decoration: none;
@@ -100,11 +110,6 @@ ul li{
     border: 5px solid #000;
     font-weight: 600;
 }
-
-
-
-
-
 /*footer*/
 .footer{
     grid-area: footer;
@@ -121,12 +126,13 @@ ul li{
 }
 .footer__title{
     text-align: center;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-size: 1em;
+    margin: 10px;
 }
-.footer__title:hover{
+/* .footer__title:hover{
     translate: 25px;
-}
+} */
 .footer__info{
     border-radius: 5px;
     text-transform: capitalize;
@@ -187,7 +193,7 @@ ul li{
     text-align: center;
 }
 
-.footer .firma-pag >p {
+.firma-pag >p {
     padding: 5px;
     font-size: 8px;
 }

@@ -33,18 +33,19 @@
     text-transform: capitalize;
     font-size: 1.2em;
     font-weight: 800;
-    border: var(--clr-blue);
-    color: var(--clr-logo);
+    color: var(--clr-blue);
     text-decoration: none;    
     padding: 1.5em ;
+    padding-bottom: 0;
     margin: 0;
     transition: all .5s ease;
 
 }
 
 .enlace-header:hover{
-    color: #000;
+    color: var(--clr--blueDark);
     font-weight: 800;
+    border-bottom: 2px solid var(--clr-blue);
 }
 
 .header .navigation ul li{
