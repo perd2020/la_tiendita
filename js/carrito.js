@@ -1,3 +1,4 @@
+
 const  productosEnCarrito =JSON.parse(localStorage.getItem("productos-en-carrito")); 
 const contenedorCarritoVacio = document.querySelector("#carrito-vacio");
 let contenedorCarritoProductos = document.querySelector("#carrito-productos");
@@ -46,7 +47,7 @@ function cargarProductosCarrito() {
         });
     
     actualizarBotonesEliminar();//SE ASIGNE ESTA FUNCION A LOS NUEVOS BOTONES CREAADOS
-    actualizarTotal();// ACTUALICE
+    actualizarTotal();
 	
     } else {
         //si esta vacio
@@ -105,6 +106,9 @@ function comprarCarrito() {
     contenedorCarritoComprado.classList.remove("disabled");
 
 };
+
+
+
 
 
 
