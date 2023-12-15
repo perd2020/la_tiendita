@@ -486,11 +486,10 @@ const productos=[
 ]
 
 
-
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
-let botonesAgregar = document.querySelectorAll(".producto-agregar"); //con let para luego poder redefinirlo
+let botonesAgregar = document.querySelectorAll(".producto-agregar"); 
 const numerito = document.querySelector("#numerito");
 
 
