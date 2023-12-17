@@ -1,5 +1,4 @@
 
-
 const productos=[
     {
         "id": "hombre_campera_1",
@@ -484,7 +483,6 @@ const productos=[
         "precio": 1000
     }
 ]
-
 
 
 let contenedorProductos = document.querySelector("#contenedor-productos");
