@@ -1,0 +1,88 @@
+/*footer*/
+.footer{
+    grid-area: footer;
+    display: grid;
+
+    background-color: var(--clr-gray);
+    color: #081a39; 
+}
+.contenedorFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.footer__title{
+    text-align: center;
+    /* text-transform: capitalize; */
+    font-size: 1em;
+    margin: 10px;
+}
+/* .footer__title:hover{
+    translate: 25px;
+} */
+.footer__info{
+    border-radius: 5px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__info a{
+    padding: 5px;
+    margin: auto;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 0.8em;
+    font-weight: 400;
+    transition: .3s;
+}
+
+.footer__info a:hover{
+    transform: scale(1.2);
+    border-bottom: 2px solid #000;
+}
+
+.footer__logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 2px solid #000;
+}
+
+.logos_title{
+    margin: auto;
+    font-size: 0.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-top: 0.5em;
+}
+
+.logos {
+    padding: 10px ;
+} 
+
+
+.foolog{
+    width: 40px;
+    height: 40px;
+    transition: .3s;
+}
+
+
+.foolog:hover{
+    transform: scale(1.2);
+}
+
+
+.firma-pag{
+    background-color: var(--clr-black-trns);
+    color: #fff;
+    text-align: center;
+}
+
+.firma-pag >p {
+    padding: 5px;
+    font-size: 8px;
+}
+

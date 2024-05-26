@@ -5,83 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>la tiendita</title>
 
-    <link  rel= "apple-touch-icon"  size= "57x57"  href= "./assets/logos/favicon/apple-icon-57x57.png" > 
-    <link  rel= "apple-touch-icon"  size= "60x60"  href= "./assets/logos/favicon/apple -icon-60x60.png" > 
-    <link  rel= "apple-touch-icon"  size= "72x72"  href= "./assets/logos/favicon/apple-icon-72x72.png" > 
-    <link  rel= "apple-touch-icon"  size= "76x76"  href= "./assets/logos/favicon/icono-de-apple-76x76.png" > 
-    <link  rel= "icono-táctil-de-apple"  size= "114x114"  href= "./assets/logos/favicon/icono-de-apple-114x114.png"> 
-    <link  rel= "apple-touch-icon"  size= "120x120"  href= "./assets/logos/favicon/apple-icon-120x120.png" > 
-    <link  rel= "apple-touch-icon"  size= "144x144"  href= "./assets/logos/favicon/ apple-icon-144x144.png" > 
-    <link  rel= "apple-touch-icon"  size= "152x152"  href= "./assets/logos/favicon/apple-icon-152x152.png" > 
-    <link  rel= "apple-touch-icon"  size = "180x180"  href= "./assets/logos/favicon/icono-de-manzana-180x180.png" > 
-    <link  rel= "icono"  tipo= "imagen/png"  size= "192x192"  href= "./assets/logos/favicon/android-icon-192x192.png" > 
-    <link  rel= "icono"  tipo= "imagen/png"  size= "32x32"  href= "./assets/logos/favicon/favicon-32x32.png" > 
-    <link  rel= "icono"  type= "image/png"  size= "96x96"  href= "./assets/logos/favicon/favicon-96x96.png" > 
-    <link  rel= "icon"  type= "image/png"  size= "16x16"  href= "./assets/logos/favicon/favicon-16x16.png" > 
-    <link  rel= "manifest"  href= "./assets/logos/favicon/manifest.json" > 
-    <meta  name="msapplication-TileColor"  content = "#ffffff" > 
-    <meta  name = "msapplication-TileImage"  content = "./assets/logos/favicon/ms-icon-144x144.png" > 
-    <meta  name = "tema-color"  content = "#ffffff" > 
+    <!-- fuentes -->
+    <link rel="preconexión" href="https://fonts.googleapis.com">
+    <link rel="preconexión" href="https://fonts.gstatic.com" origen cruzado>
+<!-- favicon -->
+<link rel="shortcut icon" href="./assets/logos/favicon/favicon.ico" type="image/x-icon">
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/estilos/style.css">
-    <link rel="stylesheet" href="/estilos/carrito.css">
-    <link rel="stylesheet" href="/estilos/cabecera.css">
-    <link rel="stylesheet" href="/estilos/catalogo.css">
-
-
+<!-- hojas de estilo personales -->
+    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/footer.css">
+    <link rel="stylesheet" href="./estilos/carrito.css">
+    <link rel="stylesheet" href="./estilos/cabecera.css">
+    <link rel="stylesheet" href="./estilos/catalogo.css">
 </head>
 <body>
-    <div class="wraper-carrito">
-        <header class="header-mobile">
-            <h1 class="logo"id="logo_carrito"</h1>
-            <button class="open-menu" id="open-menu">
-                <i class="bi bi-list"></i>
-            </button>
-        </header>
-        <aside class="menu-lateral-carrito">
-            <button class="close-menu" id="close-menu">
-                <i class="bi bi-x"></i>
-            </button>
-            <header>
-                <p class="logo_ppal logo_ppal-carrito">La Tiendita shopp</p>
-                <!-- <a  class="logo_ppal-carrito" href="/index.html#inicio"><img  src="/assets/logos/tiendita.png" class="img-logo" alt="logo y enlace para volver a la pagina principal"></a> -->
+    <div class="container-fluid">
 
-                <ul>
-                    <li>
-                        <a class="boton-menu boton-volver" href="./index.html">◀ Seguir comprando</a>
-                    </li>
-                </ul>
+        <div class="wraper-carrito carrito">
+            <!-- <header class="header-mobile">
+                <h1 class="logo"id="logo_carrito"></h1>
+                <button class="open-menu" id="open-menu">l
+                    <i class="bi bi-list"></i>
+                </button>
             </header>
-            <nav>
-                <ul class="menu-lateral">
-                    <li>
-                        <button  class="boton-menu-carrito ">🛒 Productos en el carrito</button>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        <main class="catalogo">
-            <h2 class="titulo-principal" id="titulo_principal-carrito">Carrito</h2>
-            <div class="contenedor-carrito">
-                <p id="carrito-vacio" class="carrito-vacio">CARRITO VACIO</p>
-                <div id="carrito-productos" class="carrito-productos disabled">  <!--disabled deshabilitado-->
-                    <!-- Esto se va a completar con el JS -->
-                </div>
-                <div id="carrito-acciones" class="carrito-acciones disabled">
-                    <div class="carrito-acciones-izquierda">
-                        <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
+            <aside class="menu-lateral-carrito">
+                <button class="close-menu" id="close-menu">
+                    v<i class="bi bi-x"></i>
+                </button>
+                <header> -->
+                    <ul>
+                        <li>
+                            <a class="boton-menu boton-volver" href="./index.html">◀ Seguir comprando</a>
+                        </li>
+                    </ul>
+                </header>
+                <nav>
+                    <ul class="menu-lateral">
+                        <li>
+                            <button  class="boton-menu-carrito ">🛒 Productos en el carrito</button>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <main class="catalogo">
+                <h2 class="titulo-principal" id="titulo_principal-carrito">Carrito</h2>
+                <div class="contenedor-carrito">
+                    <p id="carrito-vacio" class="carrito-vacio">CARRITO VACIO</p>
+                    <div id="carrito-productos" class="carrito-productos disabled">  <!--disabled deshabilitado-->
+                        <!-- Esto se va a completar con el JS -->
+    
+                        <!-- <img class="carrito-producto-imagen" src="./assets/img-prod/bebe/bb-buzo-1.jfif" alt="producto">
+                    <div class="carrito-producto-titulo">
+                        <small>Título</small>
+                        <h3>titulo</h3>
                     </div>
-                    <div class="carrito-acciones-derecha">
-                        <div class="carrito-acciones-total">
-                            <p>Total:</p>
-                            <p id="total">$3000</p>
+                    <div class="carrito-producto-cantidad">
+                        <small>Cantidad</small>
+                        <p>20</p>
+                    </div>
+                    <div class="carrito-producto-precio">
+                        <small>Precio</small>
+                        <p>20</p>
+                    </div>
+                    <div class="carrito-producto-subtotal">
+                        <small>Subtotal</small>
+                        <p>20</p>
+                    </div>
+                    <button class="carrito-producto-eliminar" id="${producto.id}"><i class="bi bi-trash-fill">x</i></button> 
+    -->
+    <!--  -->
+                    </div>
+                    <div id="carrito-acciones" class="carrito-acciones disabled">
+                        <div class="carrito-acciones-izquierda">
+                            <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar carrito</button>
                         </div>
-                        <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+                        <div class="carrito-acciones-derecha">
+                            <div class="carrito-acciones-total">
+                                <p>Total:</p>
+                                <p id="total">$3000</p>
+                            </div>
+                            <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
+                        </div>
                     </div>
+                    <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
                 </div>
-                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
-            </div>
-        </main>
+            </main>
+    </div>
+
     <!--boton para volver al inicio de la pagina-->
         <!-- <button class="boton-flecha"> <a href="#titulo_principal-carrito">🔼 ir arriba</a> </button> -->
     <footer class="firma-pag footer-carrito"> 
